@@ -1,4 +1,4 @@
-# throttle
+# throttle 節流
 
 ## 什麼是 throttle ？
 
@@ -27,3 +27,5 @@ function throttle(fn, delay = 500) {
 ## 參考資料
 
 [手寫節流 (throttle) 函式](https://www.explainthis.io/zh-hant/interview-guides/javascript-whiteboard/throttle)
+
+[Day25-認識與實作 Debounce 和 Throttle](https://ithelp.ithome.com.tw/articles/10297948)

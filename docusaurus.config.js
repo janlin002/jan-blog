@@ -90,10 +90,10 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              // {
+              //   label: 'Tutorial',
+              //   to: '/docs/intro',
+              // },
               // {
               //   label: '關於我',
               //   to: '/src/pages/aboutme',

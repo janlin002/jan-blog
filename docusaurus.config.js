@@ -10,7 +10,7 @@ const config = {
   tagline: '這邊主要是我的技術筆記，內容不會特別整理',
   favicon: 'img/logo.jpg',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/jan-blog/',
+  baseUrl: '/',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'jan-blog', // Usually your repo name.
   onBrokenLinks: 'ignore',

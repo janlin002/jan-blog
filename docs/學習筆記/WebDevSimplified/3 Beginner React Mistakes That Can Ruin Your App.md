@@ -89,7 +89,7 @@ a.length && (
 
 ## Mistake 3: 使用錯誤的方法去更新 useState
 
-在 React 中，如果要對於 `Array` 或是 `Object` 做更新的話，不能直接修改 state，因為這樣修改的記憶體位置是一樣的，所以就不會觸發 render 。
+在 React 中，如果要對於 `Array` 或是 `Object` 做更新的話，不能直接修改 state，因為這樣修改的記憶體位置是一樣的(React 的 useState 是 `shallowEqual`)，所以就不會觸發 render 。
 
 如果希望可以修改 `Array` 或是 `Object`，必須要做到 `immutable`
 
@@ -111,3 +111,7 @@ this.setState({
 [寫 React 的時候常常聽到 immutable，什麼是 immutable ?](https://medium.com/reactmaker/%E5%AF%AB-react-%E7%9A%84%E6%99%82%E5%80%99%E5%B8%B8%E5%B8%B8%E8%81%BD%E5%88%B0-immutable-%E4%BB%80%E9%BA%BC%E6%98%AF-immutable-146d919f67e4)
 
 [is it possible to React.useState(() => {}) in React?](https://stackoverflow.com/questions/55621212/is-it-possible-to-react-usestate-in-react)
+
+[immutable](https://www.notion.so/Immutable-vs-Mutable-Data-bfbab8501898475599ac5bb6a4056e2a)
+
+[Immutable 對於 React 重要性](https://ianccy.com/immutable/)

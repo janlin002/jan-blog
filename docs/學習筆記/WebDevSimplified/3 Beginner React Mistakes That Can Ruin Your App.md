@@ -88,3 +88,26 @@ a.length && (
 這邊畫面上會顯示 `0`
 
 ## Mistake 3: 使用錯誤的方法去更新 useState
+
+在 React 中，如果要對於 `Array` 或是 `Object` 做更新的話，不能直接修改 state，因為這樣修改的記憶體位置是一樣的，所以就不會觸發 render 。
+
+如果希望可以修改 `Array` 或是 `Object`，必須要做到 `immutable`
+
+要達到 `immutable` 我們需要先複製一份出來，不能更改原本的 state ，常見的複製方法就是 ES6 的 解構
+
+```js
+this.setState({ 
+  list: [
+    ...this.state.list,
+    { id: Math.random(), name: randomStr.genreate(4) }
+  ]
+});
+```
+
+
+
+### 參考文章
+
+[寫 React 的時候常常聽到 immutable，什麼是 immutable ?](https://medium.com/reactmaker/%E5%AF%AB-react-%E7%9A%84%E6%99%82%E5%80%99%E5%B8%B8%E5%B8%B8%E8%81%BD%E5%88%B0-immutable-%E4%BB%80%E9%BA%BC%E6%98%AF-immutable-146d919f67e4)
+
+[is it possible to React.useState(() => {}) in React?](https://stackoverflow.com/questions/55621212/is-it-possible-to-react-usestate-in-react)

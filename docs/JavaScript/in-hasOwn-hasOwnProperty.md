@@ -97,5 +97,4 @@ console.log(Object.hasOwn('prop')) // true
 
 [Object.create與class](https://ithelp.ithome.com.tw/articles/10195322)
 
-
-hasOwnProperty 找不到 Object.create() 這個方法
+[‘in’ vs. ‘hasOwn’ vs. ‘hasOwnProperty’ in JavaScript](https://javascript.plainenglish.io/in-vs-hasown-vs-hasownproperty-in-javascript-885771d2d100)

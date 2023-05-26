@@ -2,12 +2,14 @@
 
 类型断言（Type Assertion）可以用来手动指定一个值的类型。
 
+Assertion 可以讓 TypeScript 允許你覆盖它的推断的型別。
+
 寫法是:
 
 ```js
 值 as 类型
 
-// 或是 
+// 或是
 
 <类型>值
 ```
@@ -16,19 +18,19 @@
 
 ```js
 interface Cat {
-    name: string;
-    run(): void;
+  name: string;
+  run(): void;
 }
 interface Fish {
-    name: string;
-    swim(): void;
+  name: string;
+  swim(): void;
 }
 
 function isFish(animal: Cat | Fish) {
-    if (typeof animal.swim === 'function') {
-        return true;
-    }
-    return false;
+  if (typeof animal.swim === "function") {
+    return true;
+  }
+  return false;
 }
 ```
 
@@ -87,4 +89,6 @@ Uncaught TypeError: animal.swim is not a function`
 
 [typescript-tutorial](https://github.com/xcatliu/typescript-tutorial/blob/master/basics/type-assertion.md)
 
-[型別介紹part3 - 型別斷言](https://ithelp.ithome.com.tw/articles/10295260)
+[型別介紹 part3 - 型別斷言](https://ithelp.ithome.com.tw/articles/10295260)
+
+[Day05:【TypeScript 學起來】TS 指定型別的三種方法](https://ithelp.ithome.com.tw/articles/10263795)
